@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<body>
+<link rel="stylesheet"href={%static "css/blurimg.css" %}>
+<div class="header">
+ <font color="red"> <h1>PORTAL FOR YOUR COMPLAINS</h1>
+ </font><FONT COLOR="green"> <p>ALWAYS THERE TO HELP YOU</p></FONT>
+ <P ALIGN="LEFT"><button><a href="http://localhost:8000/home/">HOME</a></button></P>
+</div> 
+<div class="bg-image"></div>
+
+<div class="bg-text"></style></head>
+<fieldset>
+<legend align="center">COMPLAINT FORM</legend>
+<form action="" method="POST">
+{% csrf_token %}
+NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="name"name="name"><BR><BR>
+FATHER'S NAME:&nbsp;&nbsp;&nbsp;&nbsp;<INPUT tyPE="NAME"name="father_name"><BR><BR>
+MOTHER'S NAME:<INPUT TYPE="NAME"name="mother_name"><BR><BR>
+ADDRESS: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="NAME"name="address"><BR><BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SELECT YOUR GENDER:&nbsp;&nbsp;&nbsp;
+<INPUT TYPE="RADIO"VALUE="MALE"NAME="gender"CHECKED>MALE&nbsp;&nbsp;<INPUT TYPE="RADIO"VALUE="FEMALE"NAME="gender" CHECKED>FEMALE<br><br>
+YOUR COMPLAIN:<br><br>
+<TEXTAREA ROWS=6 COLS=50 name="complain">
+</TEXTAREA><br><br>
+E-MAIL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<INPUT TYPE="email"name="email"><br><br>
+CONTACT No.:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text"name="contact_no"><br><br>
+SELECT THE TYPE OF PROBLEM:
+<select name="problem type">
+<option value="crop related" selected>crop related
+<option value="enquiry" selected>enquiry
+<option value="exploitation" selected>exploitation</select><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UPLOAD YOUR PHOTOGRAPH:<input type="file"name="myfile"><br><br>
+<p align="center"><input type="submit"value="Post"/></P>
+</form>
+</fieldset>
+</body>
+</html>

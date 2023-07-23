@@ -1,0 +1,14 @@
+*body{
+       background:url('ut.jpeg')
+          no-repeat
+                center center fixed;
+            background-size:100% 100%;
+ #img{position: absolute;
+	top: 0px;
+	left: 12000px;
+	bottom: 0px;
+	right:0px;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+}

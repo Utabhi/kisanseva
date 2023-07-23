@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="slider.css">
+</head>
+<body>
+	<h1>Gallery</h1>
+	<hr>
+
+	<div id="img-box" class="small">
+		<div class="shadow1"></div>
+		<div class="shadow2"></div>
+		<img src="tunnel.jpeg" id="smallimg">
+		
+	</div>
+	<div class="imagelist">
+		<ul>
+			<li onclick="onTfarm()">Tunnel Farming</li>
+			<li onclick="onOfarm()">Organic Farming</li>
+			<li onclick="onOchart()">Organic Farming Chart</li>
+			<li onclick="onPlant()"> Plant</li>
+			<li onclick="onFields()">Fields</li>
+		</ul>
+	</div>
+	<script>
+		var smallImg=documnt.getElementById("smallimg");
+		function onTfarm() {
+			smallimg.src="tunnel.jpeg";
+
+			// body...
+		}
+
+		function onOfarm() {
+			smallimg.src="organic.jpeg";
+		
+			// body...
+		}
+
+        function onOchart() {
+			smallimg.src="chartof.png";
+		
+			// body...
+		}
+        function onFields() {
+			smallimg.src="fields.jpeg";
+		
+			// body...
+		}
+
+		function onPlant() {
+			smallimg.src="plants.jpeg";
+		
+			// body...
+		}
+
+
+	</script>
+
+</body>
+</html>

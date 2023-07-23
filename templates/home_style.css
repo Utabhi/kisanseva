@@ -1,0 +1,168 @@
+*{
+	margin: 0px;
+	padding: 4px;
+	font-family: sans-serif;
+}
+
+
+
+
+#header{
+	background-color: rgba(30,50,60,0.3);
+	background-size:all;
+	height: 100px;
+	position: fixed;
+	width:100%;
+
+}
+
+#header img{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right:1200px;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+
+}
+
+
+
+
+#header h1{
+	padding-left:250px;
+	font-family: cursive;
+	
+}
+#header h4{
+	padding-left: 400px;
+}
+
+
+
+#sidebar{
+	position: fixed;
+	width: 200px;
+	height: 100%;
+	background: #151719;
+	left: -200px;
+	transition: all 500ms linear;
+}
+
+#sidebar.active{
+	left: 0px;
+	background: lightskyblue;
+}
+#sidebar ul li{
+	color:rgba(230,230,230,0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid rgba(100,100,100,0.3)
+}
+
+#sidebar ul li a{
+	text-decoration: none;
+}
+
+#sidebar .toggle_button{
+	position: absolute;
+	left: 230px;
+	top: 20px;
+
+}
+
+
+#sidebar .toggle_button span{
+	display: block;
+	width: 30px;
+	height: 0.1px;
+	background:black;
+	margin: 3px 0px;
+
+
+}
+#submenu{
+	float: right;
+	width: 200px;
+	border-style: groove;
+	height: 500px;
+	border-top-width: 15%;
+	border-radius: 15px;
+	
+	
+}
+
+#submenu h3{
+	background-color: lightskyblue;
+}
+#submenu li{
+	font-family: elephant;
+}
+
+#navbar li{
+	list-style-type: none;
+	text-align: center;
+	float: left;
+	height: 40px;
+	width: 150px;
+}
+
+#navbar li a{
+	text-decoration: none;
+	background-color:rgba(40,50,40,0.5); 
+	display: block;
+	color: black;
+	height: 40px;
+	width: 150px;
+	line-height: 42px;
+	transition: 0.5s;
+
+}
+
+ul.items,
+ul.sub-items{
+	position: relative;
+	display: none;
+}
+
+ul.items{
+	right: 40px;
+}
+
+ul.sub-items{
+	left: 110px;
+	bottom: 41px;
+}
+
+ul > li:hover > ul{
+	display: block;
+}
+
+#navbar > li{
+	margin-right: 1px;
+
+}
+
+ul.items li{
+	border-top: 1px solid white;
+}
+
+ul.sub-items{
+	border-left: 1px solid white;
+}
+
+ul > li:hover > a{
+	background: silver;
+}
+#navbar{
+ 	float: left;
+ 	padding-left: 600px;
+ }
+
+ 
+#content{
+	float: left;
+	padding-left: 200px;
+	}

@@ -1,0 +1,60 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+    <style type="text/css">
+        body{
+            background:url({% static 'css/ut.jpeg' %}) no-repeat
+                center center fixed;
+            background-size:100% 100%;
+     </style>
+     <title></title>
+</head><body>
+<h1 align="center"style="font-family:courier;">SOIL TYPES</h1>
+<marquee direction="right"><font color="sky blue">This is the page for various soil types in india</font></marquee>
+<button><a href="http://localhost:8000/home/">HOME</a></button><BR>
+<img align="right"height="600"width="500" src={% static "css/india-map-of-soils.jpg" %}>
+<pre><table border="3"align="left"valign="top"height="500"width="300"bgcolor="red">
+<tr>
+<th>soil types</TH>
+<TH>FOUND IN</TH>
+<TH>SUITABLE FOR</TH>
+</TR>
+<TR><TD>ALLUVIAL SOIL</TD>
+<TD>Uttar Pradesh,Bihar,punjab,haryana,delhi</TD>
+<TD>RICE,SUGARCANE,TOBACCO,COTTON,JUTE,MAIZE
+,OILSEEDS,VEGETABLES FRUITS</TD></TR>
+<TR><TD>BLACK SOIL</TD>
+<TD> Chattisgarh, Maharashtra, Tamilnadu,
+ Andhra pradesh and Gujrat</TD>
+<TD>COTTON,WHEAT,JOWAR,LINSEED,VIRGINIA,
+TOBACCO,CASTOR,SUNFLOWER,MILLETS</TD></TR>
+<TR><TD>RED SOIL</TD>
+<TD> Tamil Nadu, Karnataka, southern Maharashtra,
+ Chhattisgarh, Telangana, Andhra Pradesh, Odisha</TD>
+<TD>red gram,bengal gram,green gram,groundnut
+,castor seeds,ragi,maize,jowar</TD></TR>
+<TR><TD>LATERITE SOIL</TD>
+<TD>karnataka,kerela,tamil nadu
+ madhya pradesh,orrisa,assam</TD>
+<TD>tea,coffee,rubber,cinchona,
+coconut,arecanut</TD></TR>
+<TR><TD>MOUNTAIN SOIL</TD>
+<TD>jammu and kashmir,sikim,assam,
+arunachal pradesh</TD>
+<TD>peas,beans,kale,broccoli,various herbs,
+lettuce etc</TD></TR>
+<TR><TD>DESERT SOIL</TD>
+<TD>Thar desert of rajasthan</TD>
+<TD>watermelon,leafy vegetables,cucumbers,peppers,
+tomatoes</TD></TR>
+<TR><TD>saline soil</TD>
+<TD>gujarat,west bengal</TD>
+<TD>cotton,alfalfa,grass,sugarbeets,sorghum</TD></TR>
+</table><br><fieldset style="width:200px"bgcolor="green">
+<font color="red"><a href="pest.html">CLICK HERE TO KNOW ABOUT PEST CONTROL</a><br>
+<a href="weed.html">CLICK HERE TO KNOW ABOUT WEEDS CONTROL</a></pre></font></fieldset>
+<button>back</button><button><a href="PRICES.HTML">click here for prices</a></button>
+</body>
+</html>

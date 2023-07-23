@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<link rel="stylesheet" href={%static "css\home_style.css" %}> 
+	<div id="header">
+		<img src={%static "css/logo.jpg" %}>                          <h1>KISANSEVA:</h1><h4>Ready to help</h4>
+	</div>
+
+		<script type="text/javascript">
+		function toggleslidebar(){
+			document.getElementById('sidebar').classList.toggle('active');
+		}
+	</script>
+	
+	<div id="sidebar">
+
+		<div class="toggle_button" onclick="toggleslidebar()">
+			<span></span>
+			<span></span>
+			<span></span>
+			
+		</div>
+		<ul>
+			<li><a href="http://localhost:8000/home/">Home</a></li>
+			<li><a href="http://localhost:8000/home/complaint/">Complaint Forum</a></li>
+			<li><a href="http://localhost:8000/home/soiltypes/">Soil Types in India</a></li>
+			<li><a href="http://localhost:8000/home/prices/">Daily Prices</a></li>
+			<li><a href="http://localhost:8000/home/gallary/">Gallery</a></li>
+			<li><a href="#">contact</a></li>
+			<li><a href="http://localhost:8000/home/aboutus/">about</a></li>
+		</ul>
+		
+	</div>
+	
+	  
+	
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div id="content">
+	<img src={%static "css/ag.jpeg" %}>
+	<br>
+	 We're glad that you are here on this page.You are at the right place if you are looking for help in any topic about agriculture.<p>
+	 	We are totally devoted to help you about agricultuaral methods and different practices.<p>
+	 		Here you can know about different types of agricultural methods<p>
+	 			and information about agricultural devices and equipments.<p>
+	 				You can also ask your queries with our agricultural experts in query section.We will<p> respond to you in no time as our team is very supportive and always ready to help. 
+</div>
+
+
+<div id="submenu">
+
+	<pre>     <h3>Notifications</h3></pre>
+	<br>
+	<br>
+	<marquee direction="up">
+	<ul>
+		<li>NEW REGISTRATION</li><br>
+		<li>UPDATED PRICE LIST</li><br>
+		<li> NEW FARMING TECHNIQUES</li><br>
+		<li>COMPLAINTS RESOLVED</li><br>
+	</ul>
+    </marquee>
+
+</div>
+
+
+
+
+
+</body>
+</html>
